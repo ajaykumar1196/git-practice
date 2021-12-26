@@ -19,7 +19,7 @@ public class FeatureAController {
 
     @GetMapping(value = "greeting")
     public ResponseEntity<String> greeting(){
-        String message = featureAService.getMessage();
+        String message = featureAService.getGreeting();
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 }
