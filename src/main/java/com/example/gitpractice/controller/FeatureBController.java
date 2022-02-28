@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/a")
-public class FeatureAController {
+public class FeatureBController {
 
     private final FeatureAService featureAService;
 
-    public FeatureAController(FeatureAService featureAService) {
+    public FeatureBController(FeatureAService featureAService) {
         this.featureAService = featureAService;
     }
 
