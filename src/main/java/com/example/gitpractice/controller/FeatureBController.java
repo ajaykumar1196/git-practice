@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/a")
 public class FeatureBController {
 
-    private FeatureAService featureAService;
+    private final FeatureAService featureAService;
 
     public FeatureBController(FeatureAService featureAService) {
         this.featureAService = featureAService;
@@ -19,7 +19,7 @@ public class FeatureBController {
 
     @GetMapping(value = "greeting")
     public ResponseEntity<String> greeting(){
-        String message = featureAService.getMessage();
+        String message = featureAService.getGreeting();
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 }
