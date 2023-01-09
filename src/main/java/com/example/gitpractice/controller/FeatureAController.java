@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/a")
 public class FeatureAController {
 
-    private FeatureAService featureAService;
+    private final FeatureAService featureAService;
 
     public FeatureAController(FeatureAService featureAService) {
         this.featureAService = featureAService;
