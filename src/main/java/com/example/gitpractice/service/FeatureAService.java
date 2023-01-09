@@ -7,6 +7,6 @@ public class FeatureAService {
 
     public String getGreeting() {
         String s = "Hello World from A user - feature 3";
-        return "Hello World from A user - feature 3";
+        return "Hello World from A user - feature 5";
     }
 }
