@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class FeatureBService {
 
     public String getMessage() {
-        return "Hello World from B";
+        return "Hello World from B - feature 3";
     }
 }
